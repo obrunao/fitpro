@@ -1,0 +1,61 @@
+export const theme = {
+  colors: {
+    primary: {
+      50: '#FFF5F0',
+      100: '#FFE6D9',
+      200: '#FFCAB3',
+      300: '#FFA680',
+      400: '#FF8652',
+      500: '#FF6B35',
+      600: '#E85A2A',
+      700: '#C44A22',
+      800: '#9E3B1B',
+      900: '#7A2E15',
+    },
+    accent: {
+      400: '#A78BFA',
+      500: '#8B5CF6',
+      600: '#7C3AED',
+    },
+    neutral: {
+      0: '#FFFFFF',
+      50: '#FAFAF9',
+      100: '#F5F4F1',
+      200: '#E8E6E1',
+      300: '#D4D1CA',
+      400: '#A09D95',
+      500: '#737069',
+      600: '#565350',
+      700: '#3D3B38',
+      800: '#2A2826',
+      900: '#1A1917',
+    },
+    success: '#34D399',
+    warning: '#FBBF24',
+    error: '#F87171',
+    info: '#60A5FA',
+  },
+  fonts: {
+    heading: 'Poppins_700Bold',
+    subheading: 'Poppins_600SemiBold',
+    body: 'Poppins_400Regular',
+    caption: 'Poppins_500Medium',
+  },
+  spacing: {
+    xs: 4,
+    sm: 8,
+    md: 16,
+    lg: 24,
+    xl: 32,
+    xxl: 48,
+  },
+  radius: {
+    sm: 8,
+    md: 14,
+    lg: 20,
+    xl: 28,
+    full: 9999,
+  },
+} as const;
+
+export type Theme = typeof theme;
